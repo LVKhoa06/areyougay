@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Are you gay</title>
+</head>
+
+<body>
+    <h1>Are you gay?</h1>
+    <button onclick="haha()" class="yes">Yes</button>
+    <button onmouseover="hello()" id="no">No</button>
+</body>
+<style>
+    h1 {
+        position: fixed;
+        left: 40%;
+        background: -webkit-linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    button {
+        width: 100px;
+        height: 50px;
+        font-size: 25px;
+        position: absolute;
+        border: red 1px solid;
+        border-radius: 50px;
+    }
+
+    .yes {
+        color: aliceblue;
+        left: 300px;
+        top: 200px;
+        background-image: linear-gradient(crimson, lightsalmon, gold, seagreen, midnightblue, indigo, violet);
+
+    }
+
+    #no {
+        background-color: blue;
+        color: aliceblue;
+
+    }
+</style>
+<script>
+
+    function hello() {
+        console.log();
+        document.getElementById("no").style.top = `${Math.random() * 700}px`
+        document.getElementById("no").style.left = `${Math.random() * 1300}px`
+    }
+
+
+    function haha() {
+        alert(" HAHA WE ARE GAY")
+    }
+</script>
+
+</html>
